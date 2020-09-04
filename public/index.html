@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  
+  <title>Projeto2</title>
+</head>
+<body>
+  <form action="">
+    <h1>Cores RGB</h1>
+
+    <div class="cores">
+      <label for="">(R) Vermelho:</label>
+       <input id="vermelho" type="range" min="0" max="255" step="1" onchange="calcVerm()">
+      <input type="text" name="vermelho" id="display-vermelho" disabled>
+    </div>
+
+    <div class="cores">
+      <label for="">(G) Verde: </label>
+      <input type="range" id="verde" min="0" max="255" step="1" onchange="calcVerde()">
+      <input type="text" name="verde" id="display-verde"disabled>
+    </div>
+
+    <div class="cores">
+      <label for="">(B) Azul: </label>
+      <input type="range" id="azul" min="0" max="255" step="1" onchange="calcAzul()">
+      <input type="text" name="azul" id="display-azul" disabled>
+    </div>
+
+    <div id="quadrado"></div>
+  </form>
+  <script src="../index.js"></script>
+</body>
+</html>
