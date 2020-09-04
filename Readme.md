@@ -1,0 +1,1 @@
+# Seletor de cores feito com input range
